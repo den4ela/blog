@@ -24,7 +24,7 @@
             <tbody>
             @forelse($articles as  $article)
                 <tr><td>{{ $article->title }}</td><td>{{ $article->published }}</td><td>
-                        <a href="{{ route('admin.category.edit', $article) }}" class="btn btn-info">Редактировать</a>
+                        <a href="{{ route('admin.article.edit', $article) }}" class="btn btn-info">Редактировать</a>
 
                         <form action="{{ route('admin.article.destroy', $article) }}" onsubmit="if (confirm('Удалить новость?')){return true} else{return false}" method="post">
                             <input type="hidden" name="_method" value="DELETE">
