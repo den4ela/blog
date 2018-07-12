@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="app">
@@ -38,8 +39,8 @@
                             Блог
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Категории</a>
-                            <a class="dropdown-item" href="#">Материалы</a>
+                            <a class="dropdown-item" href="{{ route('admin.category.index') }}">Категории</a>
+                            <a class="dropdown-item" href="{{ route('admin.article.index') }}">Материалы</a>
                         </div>
                     </li>
                 </ul>
